@@ -1,0 +1,15 @@
+C:\Users\aluno\Desktop\cifra_de_vinegere\cifra_de_vinegere\bin\Debug\net6.0\cifra_de_vinegere.exe
+C:\Users\aluno\Desktop\cifra_de_vinegere\cifra_de_vinegere\bin\Debug\net6.0\cifra_de_vinegere.deps.json
+C:\Users\aluno\Desktop\cifra_de_vinegere\cifra_de_vinegere\bin\Debug\net6.0\cifra_de_vinegere.runtimeconfig.json
+C:\Users\aluno\Desktop\cifra_de_vinegere\cifra_de_vinegere\bin\Debug\net6.0\cifra_de_vinegere.dll
+C:\Users\aluno\Desktop\cifra_de_vinegere\cifra_de_vinegere\bin\Debug\net6.0\cifra_de_vinegere.pdb
+C:\Users\aluno\Desktop\cifra_de_vinegere\cifra_de_vinegere\obj\Debug\net6.0\cifra_de_vinegere.csproj.AssemblyReference.cache
+C:\Users\aluno\Desktop\cifra_de_vinegere\cifra_de_vinegere\obj\Debug\net6.0\cifra_de_vinegere.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\aluno\Desktop\cifra_de_vinegere\cifra_de_vinegere\obj\Debug\net6.0\cifra_de_vinegere.AssemblyInfoInputs.cache
+C:\Users\aluno\Desktop\cifra_de_vinegere\cifra_de_vinegere\obj\Debug\net6.0\cifra_de_vinegere.AssemblyInfo.cs
+C:\Users\aluno\Desktop\cifra_de_vinegere\cifra_de_vinegere\obj\Debug\net6.0\cifra_de_vinegere.csproj.CoreCompileInputs.cache
+C:\Users\aluno\Desktop\cifra_de_vinegere\cifra_de_vinegere\obj\Debug\net6.0\cifra_de_vinegere.dll
+C:\Users\aluno\Desktop\cifra_de_vinegere\cifra_de_vinegere\obj\Debug\net6.0\refint\cifra_de_vinegere.dll
+C:\Users\aluno\Desktop\cifra_de_vinegere\cifra_de_vinegere\obj\Debug\net6.0\cifra_de_vinegere.pdb
+C:\Users\aluno\Desktop\cifra_de_vinegere\cifra_de_vinegere\obj\Debug\net6.0\cifra_de_vinegere.genruntimeconfig.cache
+C:\Users\aluno\Desktop\cifra_de_vinegere\cifra_de_vinegere\obj\Debug\net6.0\ref\cifra_de_vinegere.dll

@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.5.33516.290
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "cifra_de_vinegere", "cifra_de_vinegere\cifra_de_vinegere.csproj", "{D80E58B9-6EF3-4D11-9D73-D23AEEA3D5DA}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D80E58B9-6EF3-4D11-9D73-D23AEEA3D5DA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D80E58B9-6EF3-4D11-9D73-D23AEEA3D5DA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D80E58B9-6EF3-4D11-9D73-D23AEEA3D5DA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D80E58B9-6EF3-4D11-9D73-D23AEEA3D5DA}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {541536B4-DD8C-4DCA-9C50-E1230170D399}
+	EndGlobalSection
+EndGlobal
