@@ -1,4 +1,6 @@
-﻿class Program
+﻿using System;
+
+class Program
 {
     static void Main()
     {
@@ -25,8 +27,15 @@
         }
         else if (opcao == 2)
         {
-            resultado = Descriptografar(texto, chave);
-            Console.WriteLine("Texto decifrado: " + resultado);
+            if (string.IsNullOrEmpty(chave))
+            {
+                Console.WriteLine("A chave não pode estar em branco para descriptografar.");
+            }
+            else
+            {
+                resultado = Descriptografar(texto, chave);
+                Console.WriteLine("Texto decifrado: " + resultado);
+            }
         }
         else
         {
@@ -36,48 +45,20 @@
 
     static string Criptografar(string texto, string chave)
     {
+        string textoCifrado = "";
         int tamanhoTexto = texto.Length;
         int tamanhoChave = chave.Length;
 
-        char[,] matrizVigenere = new char[26, 26];
-        char letra = 'A';
-
-        // Construir a matriz Vigenère
-        for (int i = 0; i < 26; i++)
-        {
-            for (int j = 0; j < 26; j++)
-            {
-                matrizVigenere[i, j] = letra;
-
-                letra++;
-                if (letra > 'Z')
-                    letra = 'A';
-            }
-
-            letra++;
-            if (letra > 'Z')
-                letra = 'A';
-        }
-
-        string textoCifrado = "";
-        int posicaoChave = 0;
-
-        // Criptografar o texto
         for (int i = 0; i < tamanhoTexto; i++)
         {
             char caractereTexto = texto[i];
-            char caractereChave = chave[posicaoChave];
+            char caractereChave = tamanhoChave > 0 ? chave[i % tamanhoChave] : texto[i];
 
             if (caractereTexto >= 'A' && caractereTexto <= 'Z')
             {
-                int linha = caractereChave - 'A';
-                int coluna = caractereTexto - 'A';
-
-                textoCifrado += matrizVigenere[linha, coluna];
-
-                posicaoChave++;
-                if (posicaoChave == tamanhoChave)
-                    posicaoChave = 0;
+                int deslocamento = caractereChave - 'A';
+                char caractereCifrado = (char)((caractereTexto - 'A' + deslocamento) % 26 + 'A');
+                textoCifrado += caractereCifrado;
             }
             else
             {
@@ -90,58 +71,20 @@
 
     static string Descriptografar(string texto, string chave)
     {
+        string textoDecifrado = "";
         int tamanhoTexto = texto.Length;
         int tamanhoChave = chave.Length;
 
-        char[,] matrizVigenere = new char[26, 26];
-        char letra = 'A';
-
-        // Construir a matriz Vigenère
-        for (int i = 0; i < 26; i++)
-        {
-            for (int j = 0; j < 26; j++)
-            {
-                matrizVigenere[i, j] = letra;
-
-                letra++;
-                if (letra > 'Z')
-                    letra = 'A';
-            }
-
-            letra++;
-            if (letra > 'Z')
-                letra = 'A';
-        }
-
-        string textoDecifrado = "";
-        int posicaoChave = 0;
-
-        // Descriptografar o texto
         for (int i = 0; i < tamanhoTexto; i++)
         {
             char caractereTexto = texto[i];
-            char caractereChave = chave[posicaoChave];
+            char caractereChave = tamanhoChave > 0 ? chave[i % tamanhoChave] : caractereTexto;
 
             if (caractereTexto >= 'A' && caractereTexto <= 'Z')
             {
-                int linha = caractereChave - 'A';
-                int coluna = 0;
-
-                // Encontrar a coluna correspondente ao caractere cifrado
-                for (int j = 0; j < 26; j++)
-                {
-                    if (matrizVigenere[linha, j] == caractereTexto)
-                    {
-                        coluna = j;
-                        break;
-                    }
-                }
-
-                textoDecifrado += (char)('A' + coluna);
-
-                posicaoChave++;
-                if (posicaoChave == tamanhoChave)
-                    posicaoChave = 0;
+                int deslocamento = caractereChave - 'A';
+                char caractereDecifrado = (char)((caractereTexto - 'A' - deslocamento + 26) % 26 + 'A');
+                textoDecifrado += caractereDecifrado;
             }
             else
             {
